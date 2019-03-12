@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="3dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn ngoại tệ"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/spin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:scrollbars="vertical"
+        android:background="#b3aeae">
+    </Spinner>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số lượng ngoại tệ:"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/edit_1"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:layout_height="50dp"
+        android:hint="Nhập số ngoại tệ cần đổi"
+        android:background="#ded7d7"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sang VNĐ: "
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txtv_result"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="25dp"
+        android:background="#ded7d7"/>
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="Đổi tiền"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
